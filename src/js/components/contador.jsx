@@ -5,18 +5,6 @@ import { useEffect } from "react";
 function Counter() {
   const [counterState, setCounterState] = useState(0);
 
-  /*
-  useEffect(() => {
-    counterState >= 0 &&
-      setInterval(
-        () => setCounterState((prevCounterState) => prevCounterState + 1),
-        1000
-      );
-  }, []);
-
-
-*/
-
   useEffect(() => {
     if (counterState >= 0) {
       const setIntervalReference = setInterval(
